@@ -1,0 +1,94 @@
+\doxysection{Obstacle Class Reference}
+\hypertarget{class_obstacle}{}\label{class_obstacle}\index{Obstacle@{Obstacle}}
+
+
+Класс, представляющий препятствие, состоящее из блоков.  
+
+
+
+
+{\ttfamily \#include $<$obstacle.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_obstacle_a6e5fc89f967d947134ed3c7d8c3cf923}{Obstacle}} (Vector2 \mbox{\hyperlink{class_obstacle_a44db620bac12f597327573a33ac31078}{position}})
+\begin{DoxyCompactList}\small\item\em Конструктор класса \doxylink{class_obstacle}{Obstacle}. \end{DoxyCompactList}\item 
+\Hypertarget{class_obstacle_a4c3b6dc8c21e5c84e949f770853e9792}\label{class_obstacle_a4c3b6dc8c21e5c84e949f770853e9792} 
+void {\bfseries Draw} ()
+\begin{DoxyCompactList}\small\item\em Отрисовывает препятствие на экране. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_obstacle_a44db620bac12f597327573a33ac31078}\label{class_obstacle_a44db620bac12f597327573a33ac31078} 
+Vector2 {\bfseries position}
+\begin{DoxyCompactList}\small\item\em Позиция препятствия на экране. \end{DoxyCompactList}\item 
+\Hypertarget{class_obstacle_a754185853e00fa4d2eb3b0c2d7f10a89}\label{class_obstacle_a754185853e00fa4d2eb3b0c2d7f10a89} 
+std\+::vector$<$ \mbox{\hyperlink{class_block}{Block}} $>$ {\bfseries blocks}
+\begin{DoxyCompactList}\small\item\em Вектор, содержащий блоки, составляющие препятствие. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{class_obstacle_a88fee4e70f6cfde936c2dd1a4a814914}{grid}}
+\begin{DoxyCompactList}\small\item\em Статическая сетка, определяющая форму препятствия. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс, представляющий препятствие, состоящее из блоков. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_obstacle_a6e5fc89f967d947134ed3c7d8c3cf923}\label{class_obstacle_a6e5fc89f967d947134ed3c7d8c3cf923} 
+\index{Obstacle@{Obstacle}!Obstacle@{Obstacle}}
+\index{Obstacle@{Obstacle}!Obstacle@{Obstacle}}
+\doxysubsubsection{\texorpdfstring{Obstacle()}{Obstacle()}}
+{\footnotesize\ttfamily Obstacle\+::\+Obstacle (\begin{DoxyParamCaption}\item[{Vector2}]{position }\end{DoxyParamCaption})}
+
+
+
+Конструктор класса \doxylink{class_obstacle}{Obstacle}. 
+
+Инициализирует объект препятствия с заданной позицией и создает блоки на основе сетки.
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & Позиция препятствия на экране. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_obstacle_a88fee4e70f6cfde936c2dd1a4a814914}\label{class_obstacle_a88fee4e70f6cfde936c2dd1a4a814914} 
+\index{Obstacle@{Obstacle}!grid@{grid}}
+\index{grid@{grid}!Obstacle@{Obstacle}}
+\doxysubsubsection{\texorpdfstring{grid}{grid}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::vector$<$ int $>$ $>$ Obstacle\+::grid\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ \{0,\ 0,\ 0,\ 0,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 0,\ 0,\ 0,\ 0\},}
+\DoxyCodeLine{\ \ \ \ \{0,\ 0,\ 0,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 0,\ 0,\ 0\},}
+\DoxyCodeLine{\ \ \ \ \{0,\ 0,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 0,\ 0\},}
+\DoxyCodeLine{\ \ \ \ \{0,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 0\},}
+\DoxyCodeLine{\ \ \ \ \{1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1\},}
+\DoxyCodeLine{\ \ \ \ \{1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1\},}
+\DoxyCodeLine{\ \ \ \ \{1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1\},}
+\DoxyCodeLine{\ \ \ \ \{1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1\},}
+\DoxyCodeLine{\ \ \ \ \{1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1\},}
+\DoxyCodeLine{\ \ \ \ \{1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1\},}
+\DoxyCodeLine{\ \ \ \ \{1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1\},}
+\DoxyCodeLine{\ \ \ \ \{1,\ 1,\ 1,\ 1,\ 1,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 1,\ 1,\ 1,\ 1,\ 1\},}
+\DoxyCodeLine{\ \ \ \ \{1,\ 1,\ 1,\ 1,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 1,\ 1,\ 1,\ 1\}}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+Статическая сетка, определяющая форму препятствия. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{obstacle_8hpp}{obstacle.\+hpp}}\item 
+src/\mbox{\hyperlink{obstacle_8cpp}{obstacle.\+cpp}}\end{DoxyCompactItemize}

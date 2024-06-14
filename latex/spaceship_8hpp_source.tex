@@ -1,0 +1,30 @@
+\doxysection{spaceship.\+hpp}
+\hypertarget{spaceship_8hpp_source}{}\label{spaceship_8hpp_source}\index{src/spaceship.hpp@{src/spaceship.hpp}}
+\mbox{\hyperlink{spaceship_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{laser_8hpp}{laser.hpp}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <raylib.h>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_spaceship}{Spaceship}}\{}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_spaceship_a13f1c8eb5ded2fb1687203322b22bca9}{Spaceship}}();}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_spaceship_a473c4336d51f8d87730c75686b184f29}{\string~Spaceship}}();}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_spaceship_aaeb77633a8b6b1f77c9a1969f1e71551}{Draw}}();}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_spaceship_a77088b8a6402ebbe33bf41e9482c0e56}{MoveLeft}}();}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_spaceship_a0dbe5cc92b03b4f2c638e42430c3d666}{MoveRight}}();}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_spaceship_a8593cd8d913fc8193b18f9c3d536f615}{FireLaser}}();}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ Rectangle\ \mbox{\hyperlink{class_spaceship_a37753b86edf6acd6d57ead782509bc1d}{getRect}}();}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_spaceship_ab7f3f0d74d356fc1721f0c0c81e0fd1c}{Reset}}();}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ std::vector<Laser>\ \mbox{\hyperlink{class_spaceship_a5536d75693f71f4539eda26d2bcc20b6}{lasers}};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ Texture2D\ image;}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ Vector2\ position;}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ lastFireTime;}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ Sound\ laserSound;}
+\DoxyCodeLine{00077\ \};}
+
+\end{DoxyCode}

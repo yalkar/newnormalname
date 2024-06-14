@@ -1,0 +1,113 @@
+\doxysection{Mystery\+Ship Class Reference}
+\hypertarget{class_mystery_ship}{}\label{class_mystery_ship}\index{MysteryShip@{MysteryShip}}
+
+
+Класс, представляющий загадочный корабль в игре.  
+
+
+
+
+{\ttfamily \#include $<$mysteryship.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_mystery_ship_af47bfdc3749d7505caafd79fdbec2f73}{Mystery\+Ship}} ()
+\begin{DoxyCompactList}\small\item\em Конструктор класса \doxylink{class_mystery_ship}{Mystery\+Ship}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_mystery_ship_a4396e9190999aa5b2879b4886d11814c}{\texorpdfstring{$\sim$}{\string~}\+Mystery\+Ship}} ()
+\begin{DoxyCompactList}\small\item\em Деструктор класса \doxylink{class_mystery_ship}{Mystery\+Ship}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mystery_ship_a9c7db80bac6cdaf065ab9b583770e56a}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Обновляет состояние загадочного корабля. \end{DoxyCompactList}\item 
+\Hypertarget{class_mystery_ship_ab475b08ae4ea5bd2a42886e81dcd21a4}\label{class_mystery_ship_ab475b08ae4ea5bd2a42886e81dcd21a4} 
+void {\bfseries Draw} ()
+\begin{DoxyCompactList}\small\item\em Отрисовывает загадочный корабль на экране. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mystery_ship_a9d118d85721e8da63807a8dece23cedf}{Spawn}} ()
+\begin{DoxyCompactList}\small\item\em Появление загадочного корабля на экране. \end{DoxyCompactList}\item 
+Rectangle \mbox{\hyperlink{class_mystery_ship_aac046c5cd6b7d786f264644adf2e99b5}{get\+Rect}} ()
+\begin{DoxyCompactList}\small\item\em Возвращает прямоугольник, определяющий положение и размер загадочного корабля. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_mystery_ship_a606dd0121c30dd62efeca2cd74cb9e88}{alive}}
+\begin{DoxyCompactList}\small\item\em Состояние загадочного корабля. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс, представляющий загадочный корабль в игре. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_mystery_ship_af47bfdc3749d7505caafd79fdbec2f73}\label{class_mystery_ship_af47bfdc3749d7505caafd79fdbec2f73} 
+\index{MysteryShip@{MysteryShip}!MysteryShip@{MysteryShip}}
+\index{MysteryShip@{MysteryShip}!MysteryShip@{MysteryShip}}
+\doxysubsubsection{\texorpdfstring{MysteryShip()}{MysteryShip()}}
+{\footnotesize\ttfamily Mystery\+Ship\+::\+Mystery\+Ship (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Конструктор класса \doxylink{class_mystery_ship}{Mystery\+Ship}. 
+
+Инициализирует объект загадочного корабля, загружает изображение и устанавливает начальные параметры. \Hypertarget{class_mystery_ship_a4396e9190999aa5b2879b4886d11814c}\label{class_mystery_ship_a4396e9190999aa5b2879b4886d11814c} 
+\index{MysteryShip@{MysteryShip}!````~MysteryShip@{\texorpdfstring{$\sim$}{\string~}MysteryShip}}
+\index{````~MysteryShip@{\texorpdfstring{$\sim$}{\string~}MysteryShip}!MysteryShip@{MysteryShip}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}MysteryShip()}{\string~MysteryShip()}}
+{\footnotesize\ttfamily Mystery\+Ship\+::\texorpdfstring{$\sim$}{\string~}\+Mystery\+Ship (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Деструктор класса \doxylink{class_mystery_ship}{Mystery\+Ship}. 
+
+Освобождает ресурсы, загруженные для загадочного корабля. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_mystery_ship_aac046c5cd6b7d786f264644adf2e99b5}\label{class_mystery_ship_aac046c5cd6b7d786f264644adf2e99b5} 
+\index{MysteryShip@{MysteryShip}!getRect@{getRect}}
+\index{getRect@{getRect}!MysteryShip@{MysteryShip}}
+\doxysubsubsection{\texorpdfstring{getRect()}{getRect()}}
+{\footnotesize\ttfamily Rectangle Mystery\+Ship\+::get\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Возвращает прямоугольник, определяющий положение и размер загадочного корабля. 
+
+\begin{DoxyReturn}{Returns}
+Прямоугольник с координатами и размерами загадочного корабля. 
+\end{DoxyReturn}
+\Hypertarget{class_mystery_ship_a9d118d85721e8da63807a8dece23cedf}\label{class_mystery_ship_a9d118d85721e8da63807a8dece23cedf} 
+\index{MysteryShip@{MysteryShip}!Spawn@{Spawn}}
+\index{Spawn@{Spawn}!MysteryShip@{MysteryShip}}
+\doxysubsubsection{\texorpdfstring{Spawn()}{Spawn()}}
+{\footnotesize\ttfamily void Mystery\+Ship\+::\+Spawn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Появление загадочного корабля на экране. 
+
+Устанавливает корабль в начальное положение и активирует его. \Hypertarget{class_mystery_ship_a9c7db80bac6cdaf065ab9b583770e56a}\label{class_mystery_ship_a9c7db80bac6cdaf065ab9b583770e56a} 
+\index{MysteryShip@{MysteryShip}!Update@{Update}}
+\index{Update@{Update}!MysteryShip@{MysteryShip}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Mystery\+Ship\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Обновляет состояние загадочного корабля. 
+
+Перемещает корабль и проверяет его состояние. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_mystery_ship_a606dd0121c30dd62efeca2cd74cb9e88}\label{class_mystery_ship_a606dd0121c30dd62efeca2cd74cb9e88} 
+\index{MysteryShip@{MysteryShip}!alive@{alive}}
+\index{alive@{alive}!MysteryShip@{MysteryShip}}
+\doxysubsubsection{\texorpdfstring{alive}{alive}}
+{\footnotesize\ttfamily bool Mystery\+Ship\+::alive}
+
+
+
+Состояние загадочного корабля. 
+
+true, если корабль активен, иначе false. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{mysteryship_8hpp}{mysteryship.\+hpp}}\item 
+src/\mbox{\hyperlink{mysteryship_8cpp}{mysteryship.\+cpp}}\end{DoxyCompactItemize}

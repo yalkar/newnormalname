@@ -1,0 +1,121 @@
+\doxysection{Alien Class Reference}
+\hypertarget{class_alien}{}\label{class_alien}\index{Alien@{Alien}}
+
+
+Класс, представляющий инопланетянина в игре.  
+
+
+
+
+{\ttfamily \#include $<$alien.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_alien_a872cffb3131e4d9e25002cc134abdfb1}{Alien}} (int \mbox{\hyperlink{class_alien_a614ee3372231b28e95d5b64a883648cc}{type}}, Vector2 \mbox{\hyperlink{class_alien_a416a19df906995852d2e6cd2ccf66b80}{position}})
+\begin{DoxyCompactList}\small\item\em Конструктор класса \doxylink{class_alien}{Alien}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_alien_ac01717fd7215006ceb50f6e93a7b1f17}{Update}} (int direction)
+\begin{DoxyCompactList}\small\item\em Обновляет позицию инопланетянина. \end{DoxyCompactList}\item 
+\Hypertarget{class_alien_aa8a9375ebeafef589b574b9619c66413}\label{class_alien_aa8a9375ebeafef589b574b9619c66413} 
+void {\bfseries Draw} ()
+\begin{DoxyCompactList}\small\item\em Отрисовывает изображение инопланетянина на экране. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_alien_a1838252ed547cfb0d52f097e37017988}{Get\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Возвращает тип инопланетянина. \end{DoxyCompactList}\item 
+Rectangle \mbox{\hyperlink{class_alien_a58de7db47193c862306348d69482acdb}{get\+Rect}} ()
+\begin{DoxyCompactList}\small\item\em Возвращает прямоугольник, определяющий положение и размер инопланетянина. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_alien_ae7bf7de697fbf09357709db7ee53dead}\label{class_alien_ae7bf7de697fbf09357709db7ee53dead} 
+static void {\bfseries Unload\+Images} ()
+\begin{DoxyCompactList}\small\item\em Выгружает изображения инопланетян из памяти. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_alien_a614ee3372231b28e95d5b64a883648cc}\label{class_alien_a614ee3372231b28e95d5b64a883648cc} 
+int {\bfseries type}
+\begin{DoxyCompactList}\small\item\em Тип инопланетянина. \end{DoxyCompactList}\item 
+\Hypertarget{class_alien_a416a19df906995852d2e6cd2ccf66b80}\label{class_alien_a416a19df906995852d2e6cd2ccf66b80} 
+Vector2 {\bfseries position}
+\begin{DoxyCompactList}\small\item\em Позиция инопланетянина на экране. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_alien_a3d51e282ac8ea49185b7e1bb608ad429}\label{class_alien_a3d51e282ac8ea49185b7e1bb608ad429} 
+static Texture2D {\bfseries alien\+Images} \mbox{[}3\mbox{]} = \{\}
+\begin{DoxyCompactList}\small\item\em Статический массив текстур для изображений инопланетян. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс, представляющий инопланетянина в игре. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_alien_a872cffb3131e4d9e25002cc134abdfb1}\label{class_alien_a872cffb3131e4d9e25002cc134abdfb1} 
+\index{Alien@{Alien}!Alien@{Alien}}
+\index{Alien@{Alien}!Alien@{Alien}}
+\doxysubsubsection{\texorpdfstring{Alien()}{Alien()}}
+{\footnotesize\ttfamily Alien\+::\+Alien (\begin{DoxyParamCaption}\item[{int}]{type,  }\item[{Vector2}]{position }\end{DoxyParamCaption})}
+
+
+
+Конструктор класса \doxylink{class_alien}{Alien}. 
+
+Инициализирует объект инопланетянина с заданным типом и позицией. Загружает изображение инопланетянина, если оно еще не загружено.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & Тип инопланетянина (1, 2 или 3). \\
+\hline
+{\em position} & Позиция инопланетянина на экране. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_alien_a58de7db47193c862306348d69482acdb}\label{class_alien_a58de7db47193c862306348d69482acdb} 
+\index{Alien@{Alien}!getRect@{getRect}}
+\index{getRect@{getRect}!Alien@{Alien}}
+\doxysubsubsection{\texorpdfstring{getRect()}{getRect()}}
+{\footnotesize\ttfamily Rectangle Alien\+::get\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Возвращает прямоугольник, определяющий положение и размер инопланетянина. 
+
+\begin{DoxyReturn}{Returns}
+Прямоугольник с координатами и размерами инопланетянина. 
+\end{DoxyReturn}
+\Hypertarget{class_alien_a1838252ed547cfb0d52f097e37017988}\label{class_alien_a1838252ed547cfb0d52f097e37017988} 
+\index{Alien@{Alien}!GetType@{GetType}}
+\index{GetType@{GetType}!Alien@{Alien}}
+\doxysubsubsection{\texorpdfstring{GetType()}{GetType()}}
+{\footnotesize\ttfamily int Alien\+::\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Возвращает тип инопланетянина. 
+
+\begin{DoxyReturn}{Returns}
+Тип инопланетянина (1, 2 или 3). 
+\end{DoxyReturn}
+\Hypertarget{class_alien_ac01717fd7215006ceb50f6e93a7b1f17}\label{class_alien_ac01717fd7215006ceb50f6e93a7b1f17} 
+\index{Alien@{Alien}!Update@{Update}}
+\index{Update@{Update}!Alien@{Alien}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Alien\+::\+Update (\begin{DoxyParamCaption}\item[{int}]{direction }\end{DoxyParamCaption})}
+
+
+
+Обновляет позицию инопланетянина. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & Направление движения инопланетянина по оси X. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{alien_8hpp}{alien.\+hpp}}\item 
+src/\mbox{\hyperlink{alien_8cpp}{alien.\+cpp}}\end{DoxyCompactItemize}

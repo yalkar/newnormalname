@@ -1,0 +1,60 @@
+\doxysection{src/main.cpp File Reference}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{src/main.cpp@{src/main.cpp}}
+
+
+Основной файл для игры Space Invaders на C++.  
+
+
+{\ttfamily \#include "{}game.\+hpp"{}}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$raylib.\+h$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{main_8cpp_ab6fed281d0e5b171fc50b1301897f453}{Format\+With\+Leading\+Zeros}} (int number, int width)
+\begin{DoxyCompactList}\small\item\em Форматирует число с ведущими нулями. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Главная функция игры. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Основной файл для игры Space Invaders на C++. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8cpp_ab6fed281d0e5b171fc50b1301897f453}\label{main_8cpp_ab6fed281d0e5b171fc50b1301897f453} 
+\index{main.cpp@{main.cpp}!FormatWithLeadingZeros@{FormatWithLeadingZeros}}
+\index{FormatWithLeadingZeros@{FormatWithLeadingZeros}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{FormatWithLeadingZeros()}{FormatWithLeadingZeros()}}
+{\footnotesize\ttfamily std\+::string Format\+With\+Leading\+Zeros (\begin{DoxyParamCaption}\item[{int}]{number,  }\item[{int}]{width }\end{DoxyParamCaption})}
+
+
+
+Форматирует число с ведущими нулями. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em number} & Число для форматирования. \\
+\hline
+{\em width} & Ширина форматируемой строки (количество символов). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Отформатированная строка с ведущими нулями. 
+\end{DoxyReturn}
+\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Главная функция игры. 
+
+Инициализирует окно, аудиоустройство, шрифты, текстуры и игровой объект. Запускает основной игровой цикл, в котором обрабатываются ввод, обновление состояния и отрисовка. По завершении игры освобождает все ресурсы.
+
+\begin{DoxyReturn}{Returns}
+0 в случае успешного завершения программы. 
+\end{DoxyReturn}

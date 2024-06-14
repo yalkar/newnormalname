@@ -1,0 +1,51 @@
+\doxysection{game.\+hpp}
+\hypertarget{game_8hpp_source}{}\label{game_8hpp_source}\index{src/game.hpp@{src/game.hpp}}
+\mbox{\hyperlink{game_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{spaceship_8hpp}{spaceship.hpp}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{obstacle_8hpp}{obstacle.hpp}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{alien_8hpp}{alien.hpp}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{mysteryship_8hpp}{mysteryship.hpp}}"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_game}{Game}}\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_ad59df6562a58a614fda24622d3715b65}{Game}}();}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_ae3d112ca6e0e55150d2fdbc704474530}{\string~Game}}();}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_aad2c20e2c5529244095c50c238911e30}{Draw}}();}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_a1c5373c68261c54aff03e6abe40fee52}{Update}}();}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_a6cb82eaece4e30724f3fe4e0d4bde5fc}{HandleInput}}();}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_game_ace663fbc1ed287f3ba3db845dc411620}{run}};}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_game_aa65dc796ac407c6e5ffaab155530c90a}{lives}};}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_game_afaf9404196df9968103d5b0d0ad08139}{score}};}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_game_a922eaaad2fd28c93d5b9a2c48f5d88c6}{highscore}};}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ Music\ \mbox{\hyperlink{class_game_aaea1edb9042f804aea528ab5fe2d9b32}{music}};}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ DeleteInactiveLasers();}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ std::vector<Obstacle>\ CreateObstacles();}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ std::vector<Alien>\ CreateAliens();}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ MoveAliens();}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ MoveDownAliens(\textcolor{keywordtype}{int}\ distance);}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ AlienShootLaser();}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ CheckForCollisions();}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ GameOver();}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ Reset();}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ InitGame();}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ checkForHighscore();}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ saveHighscoreToFile(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_game_a922eaaad2fd28c93d5b9a2c48f5d88c6}{highscore}});}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ loadHighscoreFromFile();}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_spaceship}{Spaceship}}\ spaceship;}
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ std::vector<Obstacle>\ obstacles;}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ std::vector<Alien>\ aliens;}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ aliensDirection;}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ std::vector<Laser>\ alienLasers;}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{float}\ alienLaserShootInterval\ =\ 0.35;}
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ timeLastAlienFired;}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_mystery_ship}{MysteryShip}}\ mysteryship;}
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ mysteryShipSpawnInterval;}
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ timeLastSpawn;}
+\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ Sound\ explosionSound;}
+\DoxyCodeLine{00173\ \};}
+
+\end{DoxyCode}

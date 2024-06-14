@@ -1,0 +1,100 @@
+\doxysection{Laser Class Reference}
+\hypertarget{class_laser}{}\label{class_laser}\index{Laser@{Laser}}
+
+
+Класс, представляющий лазер в игре.  
+
+
+
+
+{\ttfamily \#include $<$laser.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_laser_abed7f58e4590363762cf96e818ea8ee3}{Laser}} (Vector2 position, int speed)
+\begin{DoxyCompactList}\small\item\em Конструктор класса \doxylink{class_laser}{Laser}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_laser_ae591c22ceab62e1b54283a0610dad18c}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Обновляет состояние лазера. \end{DoxyCompactList}\item 
+\Hypertarget{class_laser_a4cb5d1283fb7af0d90691c03ace9c0a9}\label{class_laser_a4cb5d1283fb7af0d90691c03ace9c0a9} 
+void {\bfseries Draw} ()
+\begin{DoxyCompactList}\small\item\em Отрисовывает лазер на экране. \end{DoxyCompactList}\item 
+Rectangle \mbox{\hyperlink{class_laser_a944370ebf98ae86d3748fad842890905}{get\+Rect}} ()
+\begin{DoxyCompactList}\small\item\em Возвращает прямоугольник, определяющий положение и размер лазера. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_laser_aa25c4e376cf57b9c3bcd137f82d0a60d}{active}}
+\begin{DoxyCompactList}\small\item\em Состояние лазера. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс, представляющий лазер в игре. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_laser_abed7f58e4590363762cf96e818ea8ee3}\label{class_laser_abed7f58e4590363762cf96e818ea8ee3} 
+\index{Laser@{Laser}!Laser@{Laser}}
+\index{Laser@{Laser}!Laser@{Laser}}
+\doxysubsubsection{\texorpdfstring{Laser()}{Laser()}}
+{\footnotesize\ttfamily Laser\+::\+Laser (\begin{DoxyParamCaption}\item[{Vector2}]{position,  }\item[{int}]{speed }\end{DoxyParamCaption})}
+
+
+
+Конструктор класса \doxylink{class_laser}{Laser}. 
+
+Инициализирует объект лазера с заданной позицией и скоростью.
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & Начальная позиция лазера. \\
+\hline
+{\em speed} & Скорость движения лазера. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_laser_a944370ebf98ae86d3748fad842890905}\label{class_laser_a944370ebf98ae86d3748fad842890905} 
+\index{Laser@{Laser}!getRect@{getRect}}
+\index{getRect@{getRect}!Laser@{Laser}}
+\doxysubsubsection{\texorpdfstring{getRect()}{getRect()}}
+{\footnotesize\ttfamily Rectangle Laser\+::get\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Возвращает прямоугольник, определяющий положение и размер лазера. 
+
+\begin{DoxyReturn}{Returns}
+Прямоугольник с координатами и размерами лазера. 
+\end{DoxyReturn}
+\Hypertarget{class_laser_ae591c22ceab62e1b54283a0610dad18c}\label{class_laser_ae591c22ceab62e1b54283a0610dad18c} 
+\index{Laser@{Laser}!Update@{Update}}
+\index{Update@{Update}!Laser@{Laser}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Laser\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Обновляет состояние лазера. 
+
+Перемещает лазер по экрану в зависимости от его скорости.
+
+Перемещает лазер по экрану в зависимости от его скорости. Деактивирует лазер, если он выходит за границы экрана. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_laser_aa25c4e376cf57b9c3bcd137f82d0a60d}\label{class_laser_aa25c4e376cf57b9c3bcd137f82d0a60d} 
+\index{Laser@{Laser}!active@{active}}
+\index{active@{active}!Laser@{Laser}}
+\doxysubsubsection{\texorpdfstring{active}{active}}
+{\footnotesize\ttfamily bool Laser\+::active}
+
+
+
+Состояние лазера. 
+
+true, если лазер активен, иначе false. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{laser_8hpp}{laser.\+hpp}}\item 
+src/\mbox{\hyperlink{laser_8cpp}{laser.\+cpp}}\end{DoxyCompactItemize}

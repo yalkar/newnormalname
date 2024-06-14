@@ -1,0 +1,98 @@
+\doxysection{Game Class Reference}
+\hypertarget{class_game}{}\label{class_game}\index{Game@{Game}}
+
+
+Класс, представляющий основную игровую логику и состояние игры.  
+
+
+
+
+{\ttfamily \#include $<$game.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_ad59df6562a58a614fda24622d3715b65}{Game}} ()
+\begin{DoxyCompactList}\small\item\em Конструктор класса \doxylink{class_game}{Game}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_ae3d112ca6e0e55150d2fdbc704474530}{\texorpdfstring{$\sim$}{\string~}\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Деструктор класса \doxylink{class_game}{Game}. \end{DoxyCompactList}\item 
+\Hypertarget{class_game_aad2c20e2c5529244095c50c238911e30}\label{class_game_aad2c20e2c5529244095c50c238911e30} 
+void {\bfseries Draw} ()
+\begin{DoxyCompactList}\small\item\em Отрисовывает все игровые элементы на экране. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_a1c5373c68261c54aff03e6abe40fee52}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Обновляет состояние игры. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_a6cb82eaece4e30724f3fe4e0d4bde5fc}{Handle\+Input}} ()
+\begin{DoxyCompactList}\small\item\em Обрабатывает ввод пользователя. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_game_ace663fbc1ed287f3ba3db845dc411620}\label{class_game_ace663fbc1ed287f3ba3db845dc411620} 
+bool {\bfseries run}
+\begin{DoxyCompactList}\small\item\em Флаг, указывающий, запущена ли игра. \end{DoxyCompactList}\item 
+\Hypertarget{class_game_aa65dc796ac407c6e5ffaab155530c90a}\label{class_game_aa65dc796ac407c6e5ffaab155530c90a} 
+int {\bfseries lives}
+\begin{DoxyCompactList}\small\item\em Количество жизней игрока. \end{DoxyCompactList}\item 
+\Hypertarget{class_game_afaf9404196df9968103d5b0d0ad08139}\label{class_game_afaf9404196df9968103d5b0d0ad08139} 
+int {\bfseries score}
+\begin{DoxyCompactList}\small\item\em Текущий счет игрока. \end{DoxyCompactList}\item 
+\Hypertarget{class_game_a922eaaad2fd28c93d5b9a2c48f5d88c6}\label{class_game_a922eaaad2fd28c93d5b9a2c48f5d88c6} 
+int {\bfseries highscore}
+\begin{DoxyCompactList}\small\item\em Рекордный счет. \end{DoxyCompactList}\item 
+\Hypertarget{class_game_aaea1edb9042f804aea528ab5fe2d9b32}\label{class_game_aaea1edb9042f804aea528ab5fe2d9b32} 
+Music {\bfseries music}
+\begin{DoxyCompactList}\small\item\em Музыкальный трек, воспроизводимый во время игры. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс, представляющий основную игровую логику и состояние игры. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_game_ad59df6562a58a614fda24622d3715b65}\label{class_game_ad59df6562a58a614fda24622d3715b65} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Конструктор класса \doxylink{class_game}{Game}. 
+
+Инициализирует игровой объект, загружает ресурсы и устанавливает начальные параметры. \Hypertarget{class_game_ae3d112ca6e0e55150d2fdbc704474530}\label{class_game_ae3d112ca6e0e55150d2fdbc704474530} 
+\index{Game@{Game}!````~Game@{\texorpdfstring{$\sim$}{\string~}Game}}
+\index{````~Game@{\texorpdfstring{$\sim$}{\string~}Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Game()}{\string~Game()}}
+{\footnotesize\ttfamily Game\+::\texorpdfstring{$\sim$}{\string~}\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Деструктор класса \doxylink{class_game}{Game}. 
+
+Освобождает ресурсы, загруженные для игры. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_game_a6cb82eaece4e30724f3fe4e0d4bde5fc}\label{class_game_a6cb82eaece4e30724f3fe4e0d4bde5fc} 
+\index{Game@{Game}!HandleInput@{HandleInput}}
+\index{HandleInput@{HandleInput}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{HandleInput()}{HandleInput()}}
+{\footnotesize\ttfamily void Game\+::\+Handle\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Обрабатывает ввод пользователя. 
+
+Вызывается в основном игровом цикле для обработки ввода с клавиатуры и других устройств. \Hypertarget{class_game_a1c5373c68261c54aff03e6abe40fee52}\label{class_game_a1c5373c68261c54aff03e6abe40fee52} 
+\index{Game@{Game}!Update@{Update}}
+\index{Update@{Update}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Game\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Обновляет состояние игры. 
+
+Вызывается в основном игровом цикле для обновления состояния всех игровых элементов. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{game_8hpp}{game.\+hpp}}\item 
+src/\mbox{\hyperlink{game_8cpp}{game.\+cpp}}\end{DoxyCompactItemize}
